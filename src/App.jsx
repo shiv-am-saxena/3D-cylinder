@@ -13,8 +13,8 @@ export default function App() {
         <Bloom
           mipmapBlur
           intensity={0.25}
-          luminanceThreshold={0.27}
-          luminanceSmoothing={0.1} />
+          luminanceThreshold={0.1}
+          luminanceSmoothing={0.9}/>
         <ToneMapping adaptive />
       </EffectComposer>
     </Canvas>

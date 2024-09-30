@@ -4,10 +4,10 @@ import { useRef } from "react";
 import * as THREE from 'three';
 export default function Scene() {
     let text = useTexture("./banner.png");
-    text.needsUpdate = true;
+    // text.needsUpdate = true;
     let cyl = useRef(null);
     useFrame((state, delta) => {
-        cyl.current.rotation.y += delta/4;
+        cyl.current.rotation.y += delta/3;
     })
     return (
         <group rotation={[0, 1.2, 0.35]}>
